@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Itim&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Tilt+Neon:XROT@-15&display=swap');
+:root{
+    --main-color:#E4B95B;
+    --white:white;
+    --gray:#383847;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  "Faculty Glyphic", sans-serif;
+}
+.w-90{
+    width: 90%;
+}
+.hero{
+    background-image: url(../images/images/home_bg.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.hero::before{
+    content: "";
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.425);
+    height: 100vh;
+    position: absolute;
+}
+.hero header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+.hero header ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.hero header ul a{
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: var(--white);
+    transition:all 1s;
+    position: relative;
+}
+
+#active::after{
+    position: absolute;
+    content : "";
+    bottom: -3px;
+    left: 4px;
+    height: 2px;
+    width: 70px;
+    background-color: var(--main-color);
+}
+.hero header ul a::after{
+    position: absolute;
+    content : "";
+    bottom: -3PX;
+    left: 7px;
+    height: 2px;
+    width: 0px;
+    background-color: var(--main-color);
+    transition:all .5s;
+    
+}
+.hero header ul a:hover::after{
+    position: absolute;
+    content : "";
+    bottom: -3px;
+    left: 7px;
+    height: 2px;
+    width: 70px;
+    background-color: var(--main-color);
+
+}
+.hero header img{
+    width:100px;
+}
+.hero .body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translatey(230px);
+    color: var(--white);
+    gap: 19px;
+    text-transform: capitalize;
+}
+.hero .body h1{
+    font-size: 2.5rem;
+}
+.hero .body span{
+    color: var(--main-color);
+}
+.hero .body button{
+    padding: 15px 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+    border: solid white 1px;
+    border-radius: 15px;
+    box-shadow: white 0px 0px 3px 1px ;
+    cursor: pointer;
+    color: var(--white);
+    transition: all .5s;
+
+}
+.hero .body button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    border: 1px rgba(0, 0, 0, 0.397) solid;
+}
+.body-2{
+    height: 100vh;
+}
+.body-2 .continar{
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    text-transform: capitalize;
+}
+.body-2 .continar h1{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+.body-2 .continar p{
+    color: #99999B;
+    font-size: 15PX;
+    letter-spacing: 2px;
+}
+.body-2 .content{
+    display: flex;
+
+    width: 70%;
+    margin: 3rem auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+}
+.body-2 .content p{
+    align-self: center;
+    color: #99999B;
+    width: 100%;
+}
+.body-2 .content img{
+    width: 45%;
+}
+.body-2 .content button{
+    padding: 15px 25px;
+    margin-top: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+    background-color: #383847;
+    border-radius: 15px;
+    color: var(--white);
+    cursor: pointer;
+    transition: .5s;
+}
+.body-2 .content button:hover{
+    background-color: #585868;
+}
+.offer-body{
+    height: 100vh;
+    background-image: url(../images/images/offer-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.offer-body .continar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
+.offer-body .continar i{
+    font-size: 3rem;
+    color: var(--white);
+
+}
+.offer-body .continar  button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.offer-body .continar .content h1{
+    color: var(--main-color);
+    font-size: 3rem;
+}
+.offer-body .continar .content{
+    text-align: center;
+}
+.offer-body .continar .content header p{
+    color: rgb(255, 255, 255);
+    margin-top:20px ;
+    font-size: 15PX;
+    letter-spacing: 2px;
+}
+.offer-body .continar .content img{
+    margin-top: 4rem;
+}
+
+.offer-body .continar .content footer{
+    margin-top:2rem ;
+    color: var(--white);
+}
+.offer-body .continar .content footer h3{
+
+    color: var(--main-color);
+}
+.offer-body .continar .content footer h3 sub{
+    text-decoration: line-through rgb(255, 255, 255);
+    color: white; padding-right: 7px;
+    font-weight: 100;
+}
+.offer-body .continar .content footer p{
+    font-weight: 10;
+    margin-bottom: 10px;
+}
+.offer-body .continar .content footer h2{
+    margin-bottom: 10px;
+}
